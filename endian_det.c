@@ -31,18 +31,18 @@
 #include <stdio.h>
 int main()
 {
-  int x = 1;
-  char *y = (char*)&x;
-	char e = *y+48; /* e -> var to store result of char operation. */
+    int x = 1;
+    char *y = (char*)&x;
+    char e = *y+48; /* e -> var to store result of char operation. */
 
-	printf("\n----------------------------------\n");
-	printf("I determine endianness of this CPU\n");
-	printf("----------------------------------\n");
-  /* printf("%c\n",*y+48); */
+    printf("\n----------------------------------\n");
+    printf("I determine endianness of this CPU\n");
+    printf("----------------------------------\n");
+    /* printf("%c\n",*y+48); */
 
-	/* e=*y+48; */
-  printf("%c - ",e);
+    /* e=*y+48; */
+    printf("%c - ",e);
 
-	printf("This CPU is %s!\n\n",(e=='1')?"Little Endian":"Big Endian");
+    printf("This CPU is %s!\n\n",(e=='1')?"Little Endian":"Big Endian");
 }
 // ex: ts=4 sts=4 sw=4 nohls expandtab:
