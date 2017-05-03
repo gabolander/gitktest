@@ -45,3 +45,4 @@ int main()
 
 	printf("This CPU is %s!\n\n",(e=='1')?"Little Endian":"Big Endian");
 }
+// ex: ts=4 sts=4 sw=4 nohls expandtab:
